@@ -1,0 +1,42 @@
+:root {
+    --main-color: #5f4b8b;
+    --main-color-light: #8d7db1;
+    --main-color-very-light: #d1c8e4;
+    --main-second-color: #ffee00;
+    --main-background-color: #fafafa;
+    --main-border-color: #efefef;
+    --border-padrao: 2px;
+}
+
+.painel{
+    padding: 20px 20px;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.25);
+    width: 90%;
+}
+
+#btn-enviar{
+    color: #ffee00;
+    padding: 5px 15px;
+    box-shadow: none;
+}
+
+#form-inserir-prova input{
+    box-shadow: none;
+    -webkit-border-radius: var(--border-padrao);
+    -moz-border-radius: var(--border-padrao);
+    border-radius: var(--border-padrao);
+    background-color: var(--main-background-color);
+    border-color: var(--main-border-color);
+}
+
+#form-inserir-prova input:focus{
+    border-color: var(--main-color-very-light);
+}
+.btn-link{
+    color: var(--main-color);
+}
+
+.btn-link:hover{
+    color: var(--main-color);
+}

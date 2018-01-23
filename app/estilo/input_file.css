@@ -1,0 +1,39 @@
+:root {
+    --main-color: #5f4b8b;
+    --main-color-light: #8d7db1;
+    --main-color-very-light: #d1c8e4;
+    --border-padrao: 2px;
+}
+/* 
+    CUSTIMIZAÇÃO DO BOTÃO DE FILE NO ENVIAR PROVA
+*/
+.file_customizada::-webkit-file-upload-button {
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 3px;    
+}
+.file_customizada::-webkit-file-upload-button:hover {
+    background-color: var(--main-color);
+}
+.custom-file-input::before {
+    content: 'Select some files';
+    display: inline-block;
+    background-color: black;
+    border: 1px solid var(--main-color-light);
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+}
+.file_customizada:hover::before {
+    border-color: black;
+}
+.file_customizada:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
